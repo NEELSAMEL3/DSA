@@ -1,3 +1,5 @@
+// 2798. Number of Employees Who Met the Target
+
 class Solution {
     public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
         int count = 0;
