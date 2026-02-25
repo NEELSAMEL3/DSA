@@ -1,7 +1,8 @@
-import java.util.*;
 
 class Solution {
+
     public int removeDuplicates(int[] nums) {
+
         if (nums.length == 0) return 0;
 
         int index = 1; // slow pointer
@@ -17,11 +18,12 @@ class Solution {
 }
 
 public class RemoveDuplicates {
+
     public static void main(String[] args) {
 
         int[] nums = {1, 1, 2, 2, 3, 4, 4};
 
-        FirstBadVersion obj = new FirstBadVersion();
+        Solution obj = new Solution();   // ✅ correct class name
         int k = obj.removeDuplicates(nums);
 
         System.out.println("Number of unique elements: " + k);
