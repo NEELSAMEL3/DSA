@@ -1,8 +1,4 @@
-
-
-
-
-
+// 209. Minimum Size Subarray Sum
 class MinimumArrayLength {
     public int minSubArrayLen(int target, int[] nums) {
 
