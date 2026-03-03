@@ -1,3 +1,4 @@
+// 930. Binary Subarrays With Sum
 class BinarySubarraySum {
 
     public int numSubarraysWithSum(int[] nums, int goal) {
