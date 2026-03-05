@@ -1,23 +1,25 @@
 // 904. Fruit Into Baskets
-import java.util.*;
+import java.util.HashMap;
 
-class TotalFruits {
-    public int totalFruit(int[] fruits) {
+public class TotalFruits {
+
+    public static int totalFruit(int[] fruits) {
 
         int left = 0;
         int maxLen = 0;
         HashMap<Integer, Integer> map = new HashMap<>();
 
-        for(int right = 0; right < fruits.length; right++){
+        for (int right = 0; right < fruits.length; right++) {
 
             map.put(fruits[right], map.getOrDefault(fruits[right], 0) + 1);
 
-            while(map.size() > 2){
+            while (map.size() > 2) {
                 map.put(fruits[left], map.get(fruits[left]) - 1);
 
-                if(map.get(fruits[left]) == 0){
+                if (map.get(fruits[left]) == 0) {
                     map.remove(fruits[left]);
                 }
+
                 left++;
             }
 
@@ -25,5 +27,14 @@ class TotalFruits {
         }
 
         return maxLen;
+    }
+
+    public static void main(String[] args) {
+
+        int[] fruits = {1, 2, 1, 2, 3, 2, 2};
+
+        int result = totalFruit(fruits);
+
+        System.out.println("Maximum fruits collected = " + result);
     }
 }
