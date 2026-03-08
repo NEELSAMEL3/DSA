@@ -1,11 +1,11 @@
-## 1. Array
+# 1. Array
 
-# 1.Traversal 
+## 1.Traversal 
 1295. Find Numbers with Even Number of Digits 
 2798. Number of Employees Who Met the Target
 
 
-# 2.Two-Pointer
+## 2.Two-Pointer
 1. Two Sum
 26. Remove Duplicates from Sorted Array
 27. Remove Element
@@ -15,19 +15,19 @@
 977. Squares of a Sorted Array
 
 
-# 4.Sliding Window 
+## 4.Sliding Window 
 643. Maximum Average Subarray I
 209. Minimum Size Subarray Sum
 904. Fruit Into Baskets
 930. Binary Subarrays With Sum
 
-## 2. String
+# 2. String
 
-# 1.Traversal 
-
-
-# 2.Two-Pointer
+## 1.Traversal 
 
 
-# 4.Sliding Window 
+## 2.Two-Pointer
+
+
+## 4.Sliding Window 
 
