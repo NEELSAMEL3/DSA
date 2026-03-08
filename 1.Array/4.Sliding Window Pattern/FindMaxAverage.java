@@ -1,5 +1,5 @@
 // 643. Maximum Average Subarray I
-public class Solution {
+public class FindMaxAverage {
 
     public static double findMaxAverage(int[] nums, int k) {
 
@@ -31,4 +31,5 @@ public class Solution {
 
         System.out.println("Maximum Average Subarray = " + result);
     }
+    
 }
