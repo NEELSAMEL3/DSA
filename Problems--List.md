@@ -1,4 +1,4 @@
-# 1. Array
+# Array
 
 ## 1.Traversal 
 1295. Find Numbers with Even Number of Digits 
@@ -21,7 +21,7 @@
 904. Fruit Into Baskets
 930. Binary Subarrays With Sum
 
-# 2. String
+# String
 
 ## 1.Traversal 
 
