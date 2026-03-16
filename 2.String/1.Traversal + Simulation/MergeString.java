@@ -1,4 +1,5 @@
-class MergeString {
+public class MergeString {
+
     public String mergeAlternately(String word1, String word2) {
 
         StringBuilder sb = new StringBuilder();
@@ -16,5 +17,17 @@ class MergeString {
         }
 
         return sb.toString();
+    }
+
+    public static void main(String[] args) {
+
+        MergeString obj = new MergeString();
+
+        String word1 = "abc";
+        String word2 = "pqr";
+
+        String result = obj.mergeAlternately(word1, word2);
+
+        System.out.println(result);
     }
 }

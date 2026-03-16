@@ -1,21 +1,33 @@
-class CheckPangram {
+public class CheckPangram {
+
     public boolean checkIfPangram(String sentence) {
-        
+
         boolean[] seen = new boolean[26];
         int count = 0;
-        
-        for(int i = 0; i < sentence.length(); i++){
-            
+
+        for (int i = 0; i < sentence.length(); i++) {
+
             int index = sentence.charAt(i) - 'a';
-            
-            if(!seen[index]){
+
+            if (!seen[index]) {
                 seen[index] = true;
                 count++;
             }
-            
-            if(count == 26) return true;
+
+            if (count == 26) return true;
         }
-        
+
         return false;
+    }
+
+    public static void main(String[] args) {
+
+        CheckPangram obj = new CheckPangram();
+
+        String sentence = "thequickbrownfoxjumpsoverthelazydog";
+
+        boolean result = obj.checkIfPangram(sentence);
+
+        System.out.println(result);
     }
 }

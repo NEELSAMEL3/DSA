@@ -1,4 +1,5 @@
-class ValidPalindrom {
+public class ValidPalindrome {
+
     public boolean isPalindrome(String s) {
         int i = 0;
         int j = s.length() - 1;
@@ -22,5 +23,17 @@ class ValidPalindrom {
             j--;
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+
+        ValidPalindrome obj = new ValidPalindrome();
+
+        String input = "A man, a plan, a canal: Panama";
+
+        boolean result = obj.isPalindrome(input);
+
+        System.out.println("Input: " + input);
+        System.out.println("Is Palindrome: " + result);
     }
 }

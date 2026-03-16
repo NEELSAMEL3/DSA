@@ -1,18 +1,29 @@
-class FindValueOperation {
+public class FindValueOperation {
+
     public int finalValueAfterOperations(String[] operations) {
-        
+
         int x = 0;
-        
-        for(String op : operations){
-            
-            if(op.charAt(1) == '+'){
+
+        for (String op : operations) {
+
+            if (op.charAt(1) == '+') {
                 x++;
-            }
-            else{
+            } else {
                 x--;
             }
         }
-        
+
         return x;
+    }
+
+    public static void main(String[] args) {
+
+        FindValueOperation obj = new FindValueOperation();
+
+        String[] operations = {"--X", "X++", "X++"};
+
+        int result = obj.finalValueAfterOperations(operations);
+
+        System.out.println(result);
     }
 }

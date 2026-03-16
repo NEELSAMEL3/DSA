@@ -1,35 +1,59 @@
 import java.util.HashSet;
 import java.util.Set;
 
-class MaxVowels {
+public class MaxVowels {
+
     public int maxVowels(String s, int k) {
+
         Set<Character> vowels = new HashSet<>();
-        vowels.add('a'); vowels.add('e'); vowels.add('i'); vowels.add('o'); vowels.add('u');
+        vowels.add('a'); 
+        vowels.add('e'); 
+        vowels.add('i'); 
+        vowels.add('o'); 
+        vowels.add('u');
 
         int maxCount = 0;
         int windowCount = 0;
 
-        // Initialize the first window
+        // First window
         for (int i = 0; i < k && i < s.length(); i++) {
             if (vowels.contains(s.charAt(i))) {
                 windowCount++;
             }
         }
+
         maxCount = windowCount;
 
-        // Slide the window
+        // Sliding window
         for (int i = k; i < s.length(); i++) {
-            // Remove the character going out of the window
+
+            // Remove left character
             if (vowels.contains(s.charAt(i - k))) {
                 windowCount--;
             }
-            // Add the new character
+
+            // Add new character
             if (vowels.contains(s.charAt(i))) {
                 windowCount++;
             }
+
             maxCount = Math.max(maxCount, windowCount);
         }
 
         return maxCount;
+    }
+
+    public static void main(String[] args) {
+
+        MaxVowels obj = new MaxVowels();
+
+        String s = "abciiidef";
+        int k = 3;
+
+        int result = obj.maxVowels(s, k);
+
+        System.out.println("String: " + s);
+        System.out.println("k = " + k);
+        System.out.println("Max vowels in substring: " + result);
     }
 }

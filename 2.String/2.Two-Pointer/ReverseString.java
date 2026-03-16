@@ -1,4 +1,5 @@
-class ReverseString {
+public class ReverseString {
+
     public void reverseString(char[] s) {
         int i = 0;
         int j = s.length - 1;
@@ -10,6 +11,20 @@ class ReverseString {
 
             i++;
             j--;
+        }
+    }
+
+    public static void main(String[] args) {
+
+        ReverseString obj = new ReverseString();
+
+        char[] arr = {'h','e','l','l','o'};
+
+        obj.reverseString(arr);
+
+        System.out.print("Reversed string: ");
+        for(char c : arr){
+            System.out.print(c);
         }
     }
 }

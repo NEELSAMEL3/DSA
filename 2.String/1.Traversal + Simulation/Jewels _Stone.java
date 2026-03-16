@@ -1,4 +1,5 @@
-class Solution {
+public class NumJewelsInStones {
+
     public int numJewelsInStones(String jewels, String stones) {
         int count = 0;
 
@@ -15,5 +16,17 @@ class Solution {
         }
 
         return count;
+    }
+
+    public static void main(String[] args) {
+
+        Solution obj = new Solution();
+
+        String jewels = "aA";
+        String stones = "aAAbbbb";
+
+        int result = obj.numJewelsInStones(jewels, stones);
+
+        System.out.println(result);
     }
 }

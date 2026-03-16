@@ -1,4 +1,5 @@
-class ReverseVowels {
+public class ReverseVowels {
+
     public String reverseVowels(String s) {
         char[] arr = s.toCharArray();
         int i = 0;
@@ -27,7 +28,17 @@ class ReverseVowels {
 
     private boolean isVowel(char c) {
         c = Character.toLowerCase(c);
-        return c == 'a' || c == 'e' || c == 'i' 
+        return c == 'a' || c == 'e' || c == 'i'
             || c == 'o' || c == 'u';
+    }
+
+    public static void main(String[] args) {
+        ReverseVowels obj = new ReverseVowels();
+
+        String input = "hello";
+        String result = obj.reverseVowels(input);
+
+        System.out.println("Input: " + input);
+        System.out.println("Output: " + result);
     }
 }

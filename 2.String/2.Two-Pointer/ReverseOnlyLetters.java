@@ -1,4 +1,5 @@
-class ReverseOnlyLetters {
+public class ReverseOnlyLetters {
+
     public String reverseOnlyLetters(String s) {
         char[] arr = s.toCharArray();
         int i = 0;
@@ -22,5 +23,15 @@ class ReverseOnlyLetters {
         }
 
         return new String(arr);
+    }
+
+    public static void main(String[] args) {
+        ReverseOnlyLetters obj = new ReverseOnlyLetters();
+
+        String input = "a-bC-dEf-ghIj";
+        String result = obj.reverseOnlyLetters(input);
+
+        System.out.println("Input: " + input);
+        System.out.println("Output: " + result);
     }
 }
